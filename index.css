@@ -1,0 +1,190 @@
+/* css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar  */
+#nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#nav::before {
+    content: "";
+    background-color: rgb(77, 74, 74);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* List Styling */
+.task1 {
+    color: white;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: 25px;
+}
+
+#nav ul {
+    display: flex;
+}
+
+#nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#nav ul li a {
+    color: white;
+    display: block;
+    padding: 21px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+}
+
+.search {
+    float: right;
+    margin-left: 590px;
+    margin-right: 40px;
+    padding: 0px 60px;
+    color: white;
+}
+
+.search input {
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 140px;
+    height: 24px;
+    text-align: center;
+}
+
+.nav-btn {
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background-color: rgb(16, 54, 70);
+    color: white;
+    cursor: pointer;
+    margin-left: -70px;
+    margin-top: 8px;
+    width: 100px;
+    height: 50px;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* section  */
+section {
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    margin-top: -23px;
+    height: 83vh;
+    z-index: -1;
+}
+
+.h-primary {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    font-size: 2.1rem;
+    margin-top: 23px;
+    text-decoration: underline;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124, 154, 167);
+}
+
+table {
+    border: 1px solid black;
+
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+td {
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even),
+table.list thread>tr {
+    background-color: rgb(204, 200, 200);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: #17344d;
+}
+
+input[type="reset"]:hover {
+    background: #17344d;
+}
+
+button {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #17344d;
+}
+
+
+/* footer  */
+footer {
+    background: rgb(77, 74, 74);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    margin-top: 0px;
+}
